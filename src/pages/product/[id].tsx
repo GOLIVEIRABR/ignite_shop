@@ -68,7 +68,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
   // Bucar os produtos mais vendidos / mais acessados para passar dentro de paths
   // fallback serve para gerenciar o acesso de páginas não passadas no paths, se for false, 
   // irá retornar 404, se for true, irá tentar gerar a página estática em tempo de execução
-  // em vez de ser apenas em tempo de build.
+  // em vez de ser apenas em tempo de build. É possível gerenciar o estado do fallback com a 
+  // propriedade isFallback do useRouter();
 
   return {
     paths: [
